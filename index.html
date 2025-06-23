@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>ROLOMANIA</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="logo.jpg">ROLOMANIA</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE NOSOTROS</a></li>
+                    <li><a href="#portafolio" onclick="seleccionar()">GALERIA</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="logo.jpg" alt="">
+            </div>
+            <h1>ROLOMANIA</h1>
+            <h2>Desde colombia con amor, directo a tu closet</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/share/1EwpVGjjHr/?mibextid=wwXIfr"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.tiktok.com/@rolomania21?_t=ZM-8xSFKnZk7BW&_r=1"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://www.instagram.com/rolomania_ca?igsh=NmU0ejdpYnFremp3"><i class="fa-brands fa-square-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+
+
+     <!-- SECCION SOBRE MI -->
+     <section id="sobremi" class="sobremi"> 
+        <div class="contenido-seccion">
+            <h2>Sobre Rolomania</h2>
+            <p>Hola, En <span> ROLOMANIA  </span>  creemos que una prenda puede ser mucho más que solo ropa: puede ser un recuerdo, una emoción, una conexión con nuestras raíces. 
+                Somos una empresa orgullosamente colombiana establecida en Canadá, especializada en traer hasta ti lo mejor de nuestra tierra: camisas de equipos colombianos, ropa deportiva, pijamas y más, todo cuidadosamente seleccionado y transportado desde Colombia. 
+                Nos mueve la cercanía, la confianza y el deseo profundo de mantener viva la identidad que llevamos en el corazón. En cada costura, en cada diseño, llevamos los colores, la calidez y la historia de nuestro país.
+                Queremos que, al vestir Rolomania, sientas que Colombia camina contigo.
+            </p>
+    
+
+            <!-- DATOS PERSONALES -->
+            <div class="fila">
+                <div class="col">
+                    <h3>Datos Empresariales</h3>
+                    <ul>
+                        <li>
+                            <strong>Telefono</strong>
+                            289-668-7599
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            Rolomaniacol@gmail.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Servicio 100% Personalizado y a domicilio. envíos desde nuestra casa a la tuya!
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SECCION PORTAFOLIO -->
+    <section id="portafolio" class="portafolio">
+        <div class="contenido-seccion">
+            <h2>PORTAFOLIO DE PRODUCTOS</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="CamiColo.jpg" alt="">
+                    <div class="overlay">
+                        <h4>Camiseta Colombia</h4>
+                        <h4>50.000</h4>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="CamiColo.jpg" alt="">
+                    <div class="overlay">
+                        <h4>Camiseta Colombia</h4>
+                        <h4>50.000</h4>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="CamiColo.jpg" alt="">
+                    <div class="overlay">
+                        <h4>Camiseta Colombia</h4>
+                        <h4>50.000</h4> 
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="CamiColo.jpg" alt="">
+                    <div class="overlay">
+                        <h4>Camiseta Colombia</h4>
+                        <h4>50.000</h4> 
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="CamiColo.jpg" alt="">
+                    <div class="overlay">
+                        <h4>Camiseta Colombia</h4>
+                        <h4>50.000</h4> 
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="CamiColo.jpg" alt="">
+                    <div class="overlay">
+                        <h4>Camiseta Colombia</h4>
+                        <h4>50.000</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!--FORMULARIO-->
+                <div class="col">
+                    <input type="text" placeholder="Tu nombre">
+                    <input type="text" placeholder="Numero telefonico">
+                    <input type="text" placeholder="Correo electronico">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!--MAPA-->
+                <div class="col">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2907.2390099326935!2d-79.83874698769091!3d43.
+                    22544827987011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDPCsDEzJzMxLjYiTiA3OcKwNTAnMTAuMiJX!5e0!3m2!1ses!2sco!4v1750712079301!5m2!1ses!2sco"
+                     width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Tel: 289-668-7599
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Rolomaniacol@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.facebook.com/share/1EwpVGjjHr/?mibextid=wwXIfr"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.tiktok.com/@rolomania21?_t=ZM-8xSFKnZk7BW&_r=1"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://www.instagram.com/rolomania_ca?igsh=NmU0ejdpYnFremp3"><i class="fa-brands fa-square-instagram"></i></a>
+        </div>
+        <h2>Autor: Juan Pablo Jutinico</h2>
+        <h2>Cel: 3106667305</h2>
+        <h2>Email: jp_1027@hotmail.com</h2>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+
+    <a href="https://wa.me/289-668-7599" class="whatsapp-float" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Chat en WhatsApp" width="60" height="60">
+      </a>
+      
+</body>
+</html>
