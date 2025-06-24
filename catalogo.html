@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />-->
+    <title>ROLOMANIA</title>
+    <!--<link rel="stylesheet" href="estilos.css">-->
+</head>
+<body>
+
+    <div class="catalogo">
+  <a href="hombre.html" class="categoria">Hombre</a>
+  <a href="mujer.html" class="categoria">Mujer</a>
+  <a href="ninos.html" class="categoria">Niños</a>
+  <a href="descuentos.html" class="categoria">Descuentos</a>
+</div>
+
+
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background-image: url('fondo.jpg'); /* Reemplaza con la URL de tu imagen */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    font-family: sans-serif;
+  }
+
+  .catalogo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Oscurece un poco para mayor legibilidad */
+  }
+
+  .categoria {
+    width: 200px;
+    height: 200px;
+    background-color: #d82b00;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    animation: fadeInUp 1s ease-in-out;
+    transition: transform 0.3s;
+    text-decoration: none;
+  }
+
+  .categoria:hover {
+    transform: scale(1.1);
+    background-color: #b9ad04;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
+
+    
+</body>
+</html>
