@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Catálogo de Productos - Rolomania</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #0f0901, #2e2e03);
+      padding: 40px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #ffffff;
+      margin-bottom: 40px;
+      font-size: 2.5em;
+    }
+
+    .catalogo {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .producto {
+      background: #fffaf0;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      width: 280px;
+      transition: transform 0.4s;
+      animation: fadeInUp 1s ease forwards;
+      overflow: hidden;
+    }
+
+    .producto:hover {
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .imagen {
+      width: 100%;
+      height: 260px;
+      background-size: cover;
+      background-position: center;
+      animation: zoomIn 2s ease infinite alternate;
+    }
+
+    @keyframes zoomIn {
+      from { transform: scale(1); }
+      to { transform: scale(1.1); }
+    }
+
+    .contenido {
+      padding: 20px;
+    }
+
+    .precio {
+      font-size: 1.3em;
+      color: #a0522d;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .descripcion, .detalles, .extendido {
+      font-size: 0.95em;
+      margin-bottom: 10px;
+    }
+
+    .extendido {
+      display: none;
+      color: #4b3f30;
+      margin-top: 10px;
+      transition: all 0.3s ease;
+    }
+
+    .boton {
+      display: inline-block;
+      padding: 10px 16px;
+      background-color: #d2691e;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .boton:hover {
+      background-color: #8b4513;
+    }
+
+    @media (max-width: 768px) {
+      .producto {
+        width: 100%;
+      }
+
+      h1 {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>🌟 Catálogo de Productos Rolomania 🌟</h1>
+  <div class="catalogo">
+    <div class="producto">
+      <div class="imagen" style="background-image: url('millonarios.jpeg');"></div>
+      <div class="contenido">
+        <div class="precio">45.00 CAD</div>
+        <div class="descripcion">Camiseta Hombre 100% algodón, ideal para clima cálido.</div>
+        <div class="detalles"><strong>Colores:</strong> Azul <br><strong>Tallas:</strong> S, M, L, XL</div>
+        <div class="extendido">Esta prenda está diseñada pensando en tu comodidad y estilo diario. Con acabados suaves, costuras reforzadas y una paleta de colores versátil, se adapta a múltiples ocasiones. ¡Perfecta para un look casual o para combinar con prendas más elegantes!</div>
+        <span class="boton" onclick="toggleTexto(this)">Ver más</span>
+      </div>
+    </div>
+
+    <div class="producto">
+      <div class="imagen" style="background-image: url('santafe.jpeg');"></div>
+      <div class="contenido">
+        <div class="precio">45.00 CAD</div>
+        <div class="descripcion">Camiseta Hombre 100% algodón, ideal para clima cálido.</div>
+        <div class="detalles"><strong>Colores:</strong> Rojo <br><strong>Tallas:</strong> S, M, L, XL</div>
+        <div class="extendido">Esta prenda está diseñada pensando en tu comodidad y estilo diario. Con acabados suaves, costuras reforzadas y una paleta de colores versátil, se adapta a múltiples ocasiones. ¡Perfecta para un look casual o para combinar con prendas más elegantes!</div>
+        <span class="boton" onclick="toggleTexto(this)">Ver más</span>
+      </div>
+    </div>
+
+    <div class="producto">
+      <div class="imagen" style="background-image: url('nacional.jpeg');"></div>
+      <div class="contenido">
+        <div class="precio">45.00 CAD</div>
+        <div class="descripcion">Camiseta Hombre 100% algodón, ideal para clima cálido.</div>
+        <div class="detalles"><strong>Colores:</strong> Verde <br><strong>Tallas:</strong> S, M, L, XL</div>
+        <div class="extendido">Esta prenda está diseñada pensando en tu comodidad y estilo diario. Con acabados suaves, costuras reforzadas y una paleta de colores versátil, se adapta a múltiples ocasiones. ¡Perfecta para un look casual o para combinar con prendas más elegantes!</div>
+        <span class="boton" onclick="toggleTexto(this)">Ver más</span>
+      </div>
+    </div>
+
+    <div class="producto">
+      <div class="imagen" style="background-image: url('tolima.jpeg');"></div>
+      <div class="contenido">
+        <div class="precio">45.00 CAD</div>
+        <div class="descripcion">Camiseta Hombre 100% algodón, ideal para clima cálido.</div>
+        <div class="detalles"><strong>Colores:</strong> Vinotinto y oro <br><strong>Tallas:</strong> S, M, L, XL</div>
+        <div class="extendido">Esta prenda está diseñada pensando en tu comodidad y estilo diario. Con acabados suaves, costuras reforzadas y una paleta de colores versátil, se adapta a múltiples ocasiones. ¡Perfecta para un look casual o para combinar con prendas más elegantes!</div>
+        <span class="boton" onclick="toggleTexto(this)">Ver más</span>
+      </div>
+    </div>
+
+    <div class="producto">
+      <div class="imagen" style="background-image: url('colomHom.jpeg');"></div>
+      <div class="contenido">
+        <div class="precio">40.00 CAD</div>
+        <div class="descripcion">Camiseta Hombre 100% poliéster reciclado, ideal para clima cálido.</div>
+        <div class="detalles"><strong>Colores:</strong> Amarillo, Azul y Rojo <br><strong>Tallas:</strong> S, M, L, XL</div>
+        <div class="extendido">Ajuste ceñido Cuello redondo acanalado Tejido entrelazado 100 % poliéster reciclado AEROREADY Paneles de malla debajo de los brazos y en los laterales
+           Escudo de la Selección Colombia tejido Inscripción "Colombia" bajo la nuca</div>
+        <span class="boton" onclick="toggleTexto(this)">Ver más</span>
+      </div>
+    </div>
+
+    <div class="producto">
+      <div class="imagen" style="background-image: url('colomMujer.jpeg');"></div>
+      <div class="contenido">
+        <div class="precio">40.00 CAD</div>
+        <div class="descripcion">Camiseta Dama 100% poliéster reciclado, ideal para clima cálido.</div>
+        <div class="detalles"><strong>Colores:</strong> Amarillo, Azul y Rojo <br><strong>Tallas:</strong> S, M, L, XL</div>
+        <div class="extendido">Ajuste ceñido Cuello redondo acanalado Tejido entrelazado 100 % poliéster reciclado AEROREADY Paneles de malla debajo de los brazos y en los laterales
+           Escudo de la Selección Colombia tejido Inscripción "Colombia" bajo la nuca</div>
+        <span class="boton" onclick="toggleTexto(this)">Ver más</span>
+      </div>
+    </div>
+
+
+    <div class="producto">
+      <div class="imagen" style="background-image: url('bodyGris.jpeg');"></div>
+      <div class="contenido">
+        <div class="precio">23.00 CAD</div>
+        <div class="descripcion">Body Dama 100% algodón elástico, ideal para clima cálido.</div>
+        <div class="detalles"><strong>Colores:</strong> Rosa, Cafe, Gris, Verde, azul <br><strong>Tallas:</strong> Unica</div>
+        <div class="extendido"> Diseñado para moverse contigo: nuestro enterizo confeccionado en tejido de algodón elástico y suave poliéster envuelve tu figura como una segunda piel.
+           Su caída fluida y textura ligera lo convierten en el aliado perfecto para días activos o noches con estilo.¿La mejor parte? No se arruga, no se pega y respira contigo.
+           Elegancia sin esfuerzo, comodidad sin límites.</div>
+        <span class="boton" onclick="toggleTexto(this)">Ver más</span>
+      </div>
+    </div>
+
+
+    <div class="producto">
+      <div class="imagen" style="background-image: url('pijama.jpeg');"></div>
+      <div class="contenido">
+        <div class="precio">25.00 CAD</div>
+        <div class="descripcion">Pijama Dama 100% algodón, ideal para clima cálido.</div>
+        <div class="detalles"><strong>Colores:</strong> Morado <br><strong>Tallas:</strong> Unica</div>
+        <div class="extendido">Esta prenda está diseñada pensando en tu comodidad y estilo diario. Con acabados suaves, costuras reforzadas y una paleta de colores versátil, se adapta a múltiples ocasiones. ¡Perfecta para un look casual o para combinar con prendas más elegantes!</div>
+        <span class="boton" onclick="toggleTexto(this)">Ver más</span>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    function toggleTexto(boton) {
+      const texto = boton.previousElementSibling;
+      if (texto.style.display === "block") {
+        texto.style.display = "none";
+        boton.textContent = "Ver más";
+      } else {
+        texto.style.display = "block";
+        boton.textContent = "Ver menos";
+      }
+    }
+  </script>
+</body>
+</html>
